@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "ResturantAPI",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authangularapp7ad0cfaa",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "CreateAPIKey": 0
+}
