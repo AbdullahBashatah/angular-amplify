@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { APIService, Restaurant} from './API.service';
 import Amplify, { Auth, Hub, Logger } from 'aws-amplify';
 import { AmplifyService }  from 'aws-amplify-angular';
-
+import { isDevMode } from '@angular/core';
 
 
 
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   restaurants: Array<Restaurant> = []!;
 
   constructor(private api: APIService, private fb: FormBuilder, private amplifyService: AmplifyService) {
- 
+    console.log('is dev mode',isDevMode());
 
    }
 
