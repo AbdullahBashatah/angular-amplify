@@ -1,0 +1,62 @@
+{
+    "identityPoolName": "angularapp7ad0cfaa_identitypool_7ad0cfaa",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "angula7ad0cfaa",
+    "userPoolName": "angularapp7ad0cfaa_userpool_7ad0cfaa",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "aliasAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "angula7ad0cfaa_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "7ad0cfaa",
+    "resourceName": "angularapp7ad0cfaa",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "dependsOn": [],
+    "hostedUI": true,
+    "hostedUIDomainName": "angularapp3b69b76f-3b69b76f",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:4200/\"],\"LogoutURLs\":[\"http://localhost:4200/\"]}",
+    "authProviders": []
+}

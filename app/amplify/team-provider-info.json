@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-angularapp-dev-95737-authRole",
+      "UnauthRoleArn": "arn:aws:iam::346272124263:role/amplify-angularapp-dev-95737-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::346272124263:role/amplify-angularapp-dev-95737-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-angularapp-dev-95737-deployment",
+      "UnauthRoleName": "amplify-angularapp-dev-95737-unauthRole",
+      "StackName": "amplify-angularapp-dev-95737",
+      "StackId": "arn:aws:cloudformation:us-east-1:346272124263:stack/amplify-angularapp-dev-95737/8c969500-15b7-11ec-82cd-0e6c55b6e46f",
+      "AmplifyAppId": "d2aczetva9fc1s"
+    },
+    "categories": {
+      "auth": {
+        "angularapp7ad0cfaa": {}
+      },
+      "function": {
+        "angularappd89d07ad": {
+          "deploymentBucketName": "amplify-angularapp-dev-95737-deployment",
+          "s3Key": "amplify-builds/angularappd89d07ad-376345394e68624e3279-build.zip"
+        }
+      }
+    }
+  }
+}

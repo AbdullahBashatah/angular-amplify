@@ -1,0 +1,1 @@
+{"errorType":"TypeError","errorMessage":"Cannot read property 'userAttributes' of undefined","trace":["TypeError: Cannot read property 'userAttributes' of undefined","    at Runtime.exports.handler (/var/task/index.js:4:23)","    at Runtime.handleOnce (/var/runtime/Runtime.js:66:25)"]}
