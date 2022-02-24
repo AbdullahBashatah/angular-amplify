@@ -1,6 +1,10 @@
 [
   {
-    "Action": ["ec2:*"],
-    "Resource": ["arn:aws:ec2:*"]
-  }
+    "Action": ["s3:CreateBucket"],
+    "Resource": ["arn:aws:s3:::*"]
+},
+{
+    "Action": ["iam:GetPolicy"],
+    "Resource": ["arn:aws:iam:::policy/*"]
+}
 ]
