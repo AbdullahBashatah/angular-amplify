@@ -162,14 +162,50 @@
               }
             },
             {
-            "Effect": "Allow",
-            "Action": [
-              "*"            ],
-            "Resource": "*"
-          }
+              "Effect": "Allow",
+              "Action": [
+                "*"
+              ],
+              "Resource": "*"
+            }
           ]
         }
       }
+    },
+    "CustomLambdaExecutionPolicy": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "custom-lambda-execution-policy",
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Action": [
+                "s3:CreateBucket"
+              ],
+              "Resource": [
+                "arn:aws:s3:::*"
+              ],
+              "Effect": "Allow"
+            },
+            {
+              "Action": [
+                "iam:GetPolicy"
+              ],
+              "Resource": [
+                "arn:aws:iam:::policy/*"
+              ],
+              "Effect": "Allow"
+            }
+          ]
+        },
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ]
+      },
+      "DependsOn": "LambdaExecutionRole"
     }
   },
   "Outputs": {

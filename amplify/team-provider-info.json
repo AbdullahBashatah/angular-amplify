@@ -18,7 +18,7 @@
       "function": {
         "angularappd89d07ad": {
           "deploymentBucketName": "amplify-angularapp-dev-95737-deployment",
-          "s3Key": "amplify-builds/angularappd89d07ad-376345394e68624e3279-build.zip"
+          "s3Key": "amplify-builds/angularappd89d07ad-387464635a356e754f72-build.zip"
         }
       }
     }
