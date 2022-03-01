@@ -1,0 +1,84 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-angularapp-dev-95737-authRole",
+      "UnauthRoleArn": "arn:aws:iam::346272124263:role/amplify-angularapp-dev-95737-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::346272124263:role/amplify-angularapp-dev-95737-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-angularapp-dev-95737-deployment",
+      "UnauthRoleName": "amplify-angularapp-dev-95737-unauthRole",
+      "StackName": "amplify-angularapp-dev-95737",
+      "StackId": "arn:aws:cloudformation:us-east-1:346272124263:stack/amplify-angularapp-dev-95737/8c969500-15b7-11ec-82cd-0e6c55b6e46f",
+      "AmplifyAppId": "d2aczetva9fc1s"
+    }
+  },
+  "api": {},
+  "auth": {
+    "angularapp7ad0cfaa": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "output": {
+        "UserPoolId": "us-east-1_VGDjpN6gq",
+        "AppClientIDWeb": "7e0ivct603jj53136pkr4t39sl",
+        "AppClientID": "7358lbl1220qn7jkm94lnfda0d",
+        "HostedUIDomain": "angularapp3b69b76f-3b69b76f-dev",
+        "IdentityPoolId": "us-east-1:a6604074-b472-4368-bddc-11b4203b26df",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:346272124263:userpool/us-east-1_VGDjpN6gq",
+        "IdentityPoolName": "angularapp7ad0cfaa_identitypool_7ad0cfaa__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:4200/\"],\"LogoutURLs\":[\"http://localhost:4200/\"]}",
+        "UserPoolName": "angularapp7ad0cfaa_userpool_7ad0cfaa"
+      },
+      "lastPushTimeStamp": "2022-03-01T00:16:59.937Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-angularapp-dev-95737-deployment/amplify-cfn-templates/auth/angularapp7ad0cfaa-cloudformation-template.yml",
+        "logicalId": "authangularapp7ad0cfaa"
+      },
+      "lastPushDirHash": "qF2Sl9chPy4atQgSEafrxTZB5iU="
+    }
+  },
+  "function": {
+    "angularappd89d07ad": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:346272124263:function:angularappd89d07ad-dev",
+        "Name": "angularappd89d07ad-dev",
+        "LambdaExecutionRole": "angularappLambdaRole038f432a-dev"
+      },
+      "lastPushTimeStamp": "2022-03-01T00:16:59.937Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-angularapp-dev-95737-deployment/amplify-cfn-templates/function/angularappd89d07ad-cloudformation-template.json",
+        "logicalId": "functionangularappd89d07ad"
+      },
+      "lastBuildTimeStamp": "2022-03-01T00:16:25.476Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-03-01T00:16:27.943Z",
+      "distZipFilename": "angularappd89d07ad-387464635a356e754f72-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-angularapp-dev-95737-deployment",
+        "s3Key": "amplify-builds/angularappd89d07ad-387464635a356e754f72-build.zip"
+      },
+      "lastPushDirHash": "Qe3LDhgeXXTVKWKDB3Nh954XdrA="
+    }
+  }
+}
